@@ -6,7 +6,7 @@ Sub homework()
     Dim input_row As Long
     Dim last_data_row As Long
     
-    Dim totalvolume As Long
+    Dim totalvolume As Double
     Dim openprice As Double
     Dim rownumber As Integer
     Dim yearlychange As Double
@@ -77,7 +77,7 @@ Sub homework()
             'assign the open price to next row
             openprice = Cells(I + 1, 3).Value
             'reset total volume to zero
-            
+            rownumber = (rownumber + 1 )
             totalvolume = 0
             
         End If

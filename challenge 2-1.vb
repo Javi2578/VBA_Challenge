@@ -5,7 +5,7 @@ Sub homework()
     Dim I As Integer
     Dim input_row As Long
     Dim last_data_row As Long
-    
+    Dim FIRST_DATA_ROW as Long
     Dim totalvolume As Double
     Dim openprice As Double
     Dim rownumber As Integer
@@ -26,7 +26,7 @@ Sub homework()
     Columns("I:L").AutoFit
     
     ' last cell row will be as follow
-    
+    FIRST_DATA_ROW = 2
     last_data_row = Cells(FIRST_DATA_ROW, 1).End(xlDown).Row
    
     
